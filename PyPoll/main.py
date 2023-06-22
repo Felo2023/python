@@ -46,10 +46,12 @@ for i in votes:
 'Find index that has higher votes_percent'
 winner_index=0
 winner=votes_percent[0]
+i=0
 for x in votes_percent:
     if x>winner:
         winner=x
-        winner_index=winner_index+1
+        winner_index=i
+    i=i+1
 
 'print on terminal'
 u=0
